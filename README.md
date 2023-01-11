@@ -1,4 +1,8 @@
-### Hi there 👋
+### Welcome to the home of Ksnarf code (KSN, or ksnarf.dev) 
+
+You will find a bunch of different repos based on a bunch of different projects, primarily I focus on Powershell for my work and lua for my personal projects but as always I am branching out
+
+If you have questions about why something is the way it is, feel free to ask. 
 
 <!--
 **Ksnarf/Ksnarf** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
