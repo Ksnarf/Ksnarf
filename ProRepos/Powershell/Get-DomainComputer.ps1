@@ -22,7 +22,7 @@ Function Get-DomainComputer {
 
 .PARAMETER Credential
     Specifies the alternate credentials to use.
-
+g
 .EXAMPLE
     Get-DomainComputer
 
