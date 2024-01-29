@@ -1,0 +1,20 @@
+# Use the official Ubuntu base image
+FROM ubuntu:latest
+
+# Install OpenSSH Server
+RUN apt-get update && apt-get install -y openssh-server
+
+# Create the SSH host keys needed by OpenSSH Server
+RUN mkdir /var/run/sshd
+
+# Set a root password: REPLACE 'your_password' with your desired password
+RUN echo 'root:L3tm31n!' | chpasswd
+
+# SSH login fix to prevent Disconnected: No supported authentication methods available error
+RUN sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config
+
+# Expose the SSH port
+EXPOSE 22
+
+# Start the SSH service
+CMD ["/usr/sbin/sshd", "-D"]
